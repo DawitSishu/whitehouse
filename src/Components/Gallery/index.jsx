@@ -150,8 +150,9 @@ const index = () => {
         justifyContent="center"
       >
         <Grid item justifyContent="center" sx={{ marginTop: 5 }}>
-          <Typography align="center" variant="h2" color="#FF00FF">
-            Journey through Elegance: Discover Our Hotel's Captivating Gallery
+          <Typography align="center" variant="h2" color="primary">
+            Embark on a Voyage of Refinement: Explore the Enchanting Gallery of
+            Our Hotel
           </Typography>
         </Grid>
       </Grid>

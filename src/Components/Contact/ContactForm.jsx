@@ -30,14 +30,14 @@ const ContactForm = () => {
     try {
       setSending(true);
       const response = await emailjs.send(
-        "service_qju62yp",
-        "template_frunu68",
+        "",
+        "",
         {
           name: data.name,
           email: data.email,
           message: data.message,
         },
-        "oxfP1ZhG4Hdv454-U"
+        ""
       );
       alert("message successfully sent!");
     } catch (error) {
