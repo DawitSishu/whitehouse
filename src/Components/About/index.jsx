@@ -90,7 +90,7 @@ function index() {
             variant="h2"
             align="center"
             sx={{ fontWeight: "bold" }}
-            color="Primary"
+            color="#FFEE49"
           >
             About US
           </Typography>
@@ -153,6 +153,7 @@ function index() {
               variant="h3"
               align="center"
               className="about-text-title"
+              color="primary"
             >
               White House Addis Hotel
             </Typography>
