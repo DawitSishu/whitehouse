@@ -1,0 +1,99 @@
+.grid-item {
+  position: relative;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1); /* Initial scale */
+  transition: transform 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97.5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: opacity 0.5s;
+  overflow: hidden; /* Prevent overflow on the y-axis */
+}
+
+.grid-item:hover .background-image {
+  transform: scale(1.1); /* Scale up the image more on hover */
+}
+
+.grid-item:hover .overlay {
+  opacity: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+.home-map {
+  position: relative;
+  border: 2px solid #FFEE49;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text {
+  color: #954eeb;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+  font-family: "Roboto Slab", arial;
+}
+
+.separator {
+  position: relative;
+  height: 40vh;
+  background-color: #d2b6ff; /* Color for the top section */
+  z-index: 1;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the curve height as needed */
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #d2b6ff; /* Color for the curve */
+}
+
+.wave-front {
+  animation: drift 13s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #d2b6ff; /* Color for the bottom section */
+  opacity: 1;
+  position: relative;
+  top: 40vh; /* Align with the separator */
+}
+
+/* Your other wave styles remain unchanged */
+
+@keyframes drift {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
