@@ -19,6 +19,7 @@ import {
 } from "@mui/material";
 import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 function CustomAppBar() {
   const isSmallScreen = useMediaQuery("(max-width:782px)");

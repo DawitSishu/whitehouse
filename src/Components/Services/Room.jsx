@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Grid,
   Typography,
@@ -10,14 +10,11 @@ import {
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import { IoDiamondSharp } from "react-icons/io5";
+import StarIcon from "@mui/icons-material/Star";
 
 const RoomPage = ({ roomData }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const handleNextImage = () => {
     setCurrentImageIndex(
       (prevIndex) => (prevIndex + 1) % roomData.images.length
@@ -52,7 +49,7 @@ const RoomPage = ({ roomData }) => {
               style={{
                 maxWidth: "100%",
                 height: "auto",
-                maxHeight: "400px",
+                maxHeight: "400px", 
               }}
             />
           </Grid>
@@ -86,9 +83,7 @@ const RoomPage = ({ roomData }) => {
                     width: "60px",
                     height: "auto",
                     border:
-                      currentImageIndex === index
-                        ? "2px solid #FFEE49"
-                        : "none",
+                      currentImageIndex === index ? "2px solid gold" : "none",
                     cursor: "pointer",
                   }}
                 />
@@ -110,7 +105,7 @@ const RoomPage = ({ roomData }) => {
             {roomData.features.map((feature, index) => (
               <ListItem key={index}>
                 <ListItemIcon>
-                  <IoDiamondSharp style={{ color: "#FFEE49" }} />
+                  <StarIcon color="primary" />
                 </ListItemIcon>
                 <Typography>{feature}</Typography>
               </ListItem>

@@ -11,49 +11,78 @@ import mor from "../../assets/pics/mor.jpg";
 
 export const ServiceData = [
   {
-    title: "Reception",
-    text: "As you enter our establishment, our warm and welcoming reception area sets the tone for a memorable experience. Our friendly and attentive staff are dedicated to ensuring your comfort and satisfaction from the moment you arrive. Whether you're checking in for a stay, seeking information about our services, or simply in need of assistance, our reception team is always ready to assist you with a genuine smile. We strive to provide a seamless and personalized experience, making your visit with us truly exceptional.",
+    title: "24-Hour Front Desk",
+    text: "As you step into our establishment, our 24-hour front desk sets the tone for an exceptional experience. Our friendly and attentive staff are dedicated to ensuring your comfort and satisfaction round the clock. Whether you're checking in late at night, seeking information about our services at any hour, or simply in need of assistance at any time, our front desk team is always ready to help you with a genuine smile. We take pride in providing a seamless and personalized experience, making your visit with us truly memorable no matter the time.",
     imgUrl: recep,
   },
   {
     title: "Restaurant",
-    text: "Welcome to our exquisite restaurant, where culinary delights await you at every turn. Our talented chefs have curated a menu that showcases a fusion of international flavors and locally sourced ingredients. From mouthwatering appetizers to decadent main courses and delectable desserts, each dish is a work of art. Immerse yourself in a sophisticated and inviting atmosphere as our attentive staff provides impeccable service. Whether it's a romantic dinner for two or a gathering with loved ones, our restaurant promises an unforgettable dining experience.",
+    text: "Welcome to our outstanding restaurant, where culinary delights await you at every turn. Our expert chefs have created a cuisine that features a blend of foreign flavors and ingredients acquired locally. Each meal is a piece of beauty, from the exquisite appetizers to the indulgent main dishes and scrumptious desserts. Immerse yourself in a refined and pleasant environment while our devoted crew gives outstanding service. Our restaurant provides an outstanding dining experience, whether it's a romantic evening for two or a family gathering.",
     imgUrl: rest,
   },
   {
     title: "Bar",
-    text: "Step into our vibrant bar and experience a world of taste and indulgence. Our skilled mixologists are dedicated to crafting unique and tantalizing cocktails that will awaken your senses. From classic favorites to innovative creations, our extensive drink menu offers something for everyone. Immerse yourself in the lively ambiance, relax with friends, and let our friendly staff cater to your every need. Whether you're looking for a casual after-work drink or a night out on the town, our bar is the perfect destination for a memorable experience.",
+    text: "Step inside our lively bar and immerse yourself in a world of flavor and delight. Our talented mixologists are committed to creating one-of-a-kind and enticing drinks that will stimulate your senses. Our broad drink selection has something for everyone, from classic favorites to inventive concoctions. Immerse yourself in the exciting atmosphere, relax with friends, and allow our helpful staff take care of all your needs. Our bar is the ideal venue for a great experience, whether you're searching for a simple after-work drink or a night out on the town.",
     imgUrl: bar,
   },
-
   {
-    text: "Achieve your fitness goals in our state-of-the-art gym, designed to inspire and motivate. Our spacious facility is equipped with top-of-the-line exercise equipment, from cardio machines to weightlifting stations, catering to all fitness levels. Our certified trainers are available to provide personalized guidance, ensuring effective workouts tailored to your needs. With a supportive and energetic environment, you'll find the motivation you need to reach new heights of fitness. Join our community of health enthusiasts and embark on a transformative fitness journey.",
-    title: "Gym",
-    imgUrl: gym,
-  },
-  {
-    title: "Steam and Sauna",
-    text: "Step into our tranquil steam bath and immerse yourself in a world of relaxation and rejuvenation. Let the soothing steam envelop your body, melting away stress and tension. The gentle heat opens your pores, purifying your skin and promoting detoxification. Feel the therapeutic benefits as the steam eases muscle soreness and improves circulation. Indulge in this ancient practice of self-care and emerge feeling revitalized, with a renewed sense of well-being.",
+    title: "Steam and Spa",
+    text: "Indulge in a world of relaxation and rejuvenation as you enter our serene spa. Our tranquil reception area welcomes you with a sense of peacefulness, setting the stage for a truly memorable spa experience. Our highly trained and attentive staff are committed to ensuring your utmost comfort and satisfaction from the moment you arrive. Whether you're scheduling a soothing massage, exploring our range of rejuvenating treatments, or simply seeking guidance on the best wellness options, our spa reception team is available to assist you with warmth and expertise. We strive to provide a seamless and personalized experience, tailoring each visit to your unique preferences and desires, making your time at our spa truly exceptional.",
     imgUrl: steam,
   },
   {
-    title: "Moroccan Bath",
-    text: "Experience the ancient traditions of Morocco with our luxurious Moroccan bath ritual. Step into our private and serene bath area, where warm water and fragrant Moroccan soap await you. Let the gentle exfoliation and detoxification process rejuvenate your skin, leaving it soft, smooth, and radiant. The therapeutic benefits extend beyond the physical, as the steam and aromatic scents relax your mind and uplift your spirits. Indulge in this centuries-old bathing ritual and immerse yourself in the rich cultural heritage of Morocco.",
-    imgUrl: mor,
+    title: "Sauna",
+    text: "Step into a world of tranquility and relaxation as you enter our inviting sauna area. Our welcoming reception area sets the tone for a truly rejuvenating experience. Our dedicated staff are committed to ensuring your comfort and satisfaction throughout your sauna journey. Whether you're looking to unwind after a long day, seeking the healing benefits of heat therapy, or simply in need of guidance on our sauna facilities, our experienced sauna reception team is here to assist you with a friendly smile. We strive to provide a seamless and personalized experience, catering to your individual preferences and needs, making your time in our sauna a truly memorable and revitalizing experience.",
+    imgUrl: steam,
+  },
+];
+
+
+
+export const roomData = [
+  {
+    image: img,
+    description:
+      "Experience royal luxury in the luxurious suite. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+    images: [img, img, img, img],
+    title: "Deluxe Double Room",
+    features: [
+      "24 hour room service",
+      "Breakfast Services",
+      "Study Desk",
+      "Multi channel television system",
+      "Acces to high speed WiFi internet",
+      "luxurious Shower with Seam and bath-hub",
+      "Living Room with Comfortable Sofas",
+    ],
   },
   {
-    title: "Massage",
-    text: "Indulge in the ultimate relaxation and rejuvenation with our professional massage services. Our skilled therapists are trained in a variety of techniques, from Swedish to deep tissue, to address your specific needs and preferences. Close your eyes and let the soothing music and aromatic scents transport you to a state of blissful serenity. Feel your stress melt away as expert hands work their magic, releasing tension from your muscles and restoring balance to your body and mind. Experience the healing power of touch and emerge feeling revitalized and renewed.",
-    imgUrl: mass,
+    image: gym,
+    description:
+      "This cozy room is perfect for friends or family traveling together. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+    images: [gym, gym, gym, gym],
+    title: "Deluxe Twin Room",
+    features: [
+      "24 hour room service",
+      "Breakfast Services",
+      "Study Desk",
+      "Multi channel television system",
+      "Acces to high speed WiFi internet",
+      "2 Beds",
+    ],
   },
   {
-    title: "Meeting Hall",
-    text: "Welcome to our elegant meeting hall, the perfect venue for your corporate events and special occasions. With versatile and customizable spaces, we can accommodate gatherings of various sizes. Our modern amenities, including audiovisual equipment and high-speed internet access, ensure seamless presentations and productive meetings. Our dedicated event planning team is at your service, assisting with every detail to make your event a resounding success. From conferences to weddings, our meeting hall sets the stage for memorable and impactful gatherings.",
-    imgUrl: meet,
-  },
-  {
-    title: "Terrace",
-    text: "Welcome to our breathtaking terrace, where you can escape the hustle and bustle of everyday life and immerse yourself in an oasis of tranquility. Take in the panoramic views of the surrounding landscape while enjoying a refreshing drink or a delicious meal from our rooftop bar and restaurant. With comfortable seating areas and a serene ambiance, our terrace is the perfect spot to unwind, socialize, or simply enjoy a moment of solitude. Whether it's a romantic evening under the stars or a gathering with friends, our terrace offers an unforgettable experience.",
-    imgUrl: teras,
+    image: mor,
+    description:
+      "This comfortable room offers all the amenities you need for a relaxing stay. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+    images: [mor, mor, mor, mor],
+    title: "Luxury Single Room",
+    features: [
+      "24 hour room service",
+      "Breakfast Services",
+      "Study Desk",
+      "Multi channel television system",
+      "Acces to high speed WiFi internet",
+    ],
   },
 ];
