@@ -13,8 +13,14 @@ import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiRestaurant } from "react-icons/bi";
-import { MdRoomService,MdLocalLaundryService } from "react-icons/md";
-import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi,FaUsers } from "react-icons/fa";
+import { MdRoomService, MdLocalLaundryService } from "react-icons/md";
+import {
+  FaDumbbell,
+  FaGlassMartini,
+  FaHotTub,
+  FaWifi,
+  FaUsers,
+} from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
@@ -26,6 +32,7 @@ import ts4 from "../../assets/pics/ts4.png";
 import ts5 from "../../assets/pics/ts5.png";
 import ts6 from "../../assets/pics/ts6.jpeg";
 import ts7 from "../../assets/pics/ts7.jpg";
+import Carou from "./Carousel";
 
 const clients = [ts, ts2, ts3, ts4, ts5, ts6, ts7];
 
@@ -47,6 +54,7 @@ const index = () => {
   return (
     <div>
       <Navbar />
+      <Carou />
       {/* <Grid
         container
         spacing={0}
