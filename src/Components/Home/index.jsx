@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/x.jpg";
-import srv from "../../assets/pics/eb6.jpg";
-import about from "../../assets/pics/st3.jpg";
-import room from "../../assets/pics/vip1.jpg";
-import g1 from "../../assets/pics/bar.jpg";
-import g2 from "../../assets/pics/mor.jpg";
-import g3 from "../../assets/pics/p3.jpg";
 import Footer from "../Footer";
 import { Grid, Typography, Divider, Box, Button } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
@@ -23,18 +16,10 @@ import {
 } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import ts from "../../assets/pics/ts.png";
-import ts2 from "../../assets/pics/ts2.png";
-import ts3 from "../../assets/pics/ts3.jpg";
-import ts4 from "../../assets/pics/ts4.png";
-import ts5 from "../../assets/pics/ts5.png";
-import ts6 from "../../assets/pics/ts6.jpeg";
-import ts7 from "../../assets/pics/ts7.jpg";
+
 import Carou from "./Carousel";
 
-const clients = [ts, ts2, ts3, ts4, ts5, ts6, ts7];
 
 const facilities = [
   { name: "Restaurant", icon: <BiRestaurant size={33} /> },

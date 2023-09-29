@@ -1,13 +1,10 @@
-import img from "../../assets/mm.jpg";
-import bar from "../../assets/pics/bar.jpg";
-import rest from "../../assets/pics/rest.jpg";
-import gym from "../../assets/pics/gym.jpg";
-import steam from "../../assets/pics/steam.jpg";
-import meet from "../../assets/pics/meet.jpg";
-import teras from "../../assets/pics/teras.jpg";
-import recep from "../../assets/pics/recep.jpg";
-import mass from "../../assets/pics/mass.jpg";
-import mor from "../../assets/pics/mor.jpg";
+import img from "../../assets/white.jpg";
+import bar from "../../assets/white.jpg";
+import rest from "../../assets/white.jpg";
+import gym from "../../assets/white.jpg";
+import steam from "../../assets/white.jpg";
+import recep from "../../assets/white.jpg";
+import mor from "../../assets/white.jpg";
 
 export const ServiceData = [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import img1 from "../../assets/mm.jpg";
-import img2 from "../../assets/pics/x.jpg";
+import img1 from "../../assets/white.jpg";
+import img2 from "../../assets/white.jpg";
 import { Paper, Button, Typography } from "@mui/material";
 
 export default function Example(props) {

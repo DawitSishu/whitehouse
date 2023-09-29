@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/serv.jpg";
+import mainImg from "../../assets/white.jpg";
 import Footer from "../Footer";
 import RoomPage from "./Room";
 
@@ -44,7 +44,7 @@ const ServiceGrid = ({ serv, servidx }) => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Grid ml={3}>
-          <Typography variant="h3" align="center">
+          <Typography variant="h3" align="center" color="primary">
             {title}
           </Typography>
           <Typography variant="p">{text}</Typography>
@@ -162,7 +162,7 @@ const index = () => {
                   variant="h5"
                   component="div"
                   color="primary"
-                  sx={{  fontWeight: "bold" }}
+                  sx={{ fontWeight: "bold" }}
                 >
                   {card.title}
                 </Typography>
