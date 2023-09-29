@@ -23,7 +23,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#1a1629",
+        backgroundColor: "#375361",
         // backgroundColor: "#e6b3d4",
         p: 6,
       }}
@@ -34,9 +34,9 @@ export default function Footer() {
             <Link to="/about" style={{ textDecoration: "none" }}>
               <Typography
                 variant="h6"
-                color="text.primary"
+                color="primary"
                 gutterBottom
-                sx={{ color: "#fff", fontWeight: "bold" }}
+                sx={{ fontWeight: "bold" }}
               >
                 About Us
               </Typography>
@@ -46,19 +46,19 @@ export default function Footer() {
               color="text.secondary"
               sx={{ color: "#fff" }}
             >
-              Our hotel is committed to offering a premium and customized
-              experience for our guests. We try to surpass expectations and make
-              every visit as pleasant and pleasurable as possible by providing
-              first-rate amenities and a dedicated staff.
+              Our hotel is dedicated to providing a quality and personalized
+              experience for our guests. By providing first-rate amenities and a
+              devoted team, we strive to exceed expectations and make every stay
+              as enjoyable and joyful as possible.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <Typography
                 variant="h6"
-                color="text.primary"
+                color="primary"
                 gutterBottom
-                sx={{ color: "#fff", fontWeight: "bold" }}
+                sx={{ fontWeight: "bold" }}
               >
                 Contact Us
               </Typography>
@@ -68,29 +68,29 @@ export default function Footer() {
               color="text.secondary"
               sx={{ color: "#fff" }}
             >
-              JR3R+4M9, Dire Dawa, Ethiopia
+              XQVV+5M Addis Ababa, Ethiopia
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
               sx={{ color: "#fff" }}
             >
-              Email: mmhoteldiredawa@gmail.com
+              Email: abc@gmail.com
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
               sx={{ color: "#fff" }}
             >
-              Phone: 025-411-44-44
+              Phone: +251-111-11-11
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography
               variant="h6"
-              color="text.primary"
+              color="primary"
               gutterBottom
-              sx={{ color: "#fff", fontWeight: "bold" }}
+              sx={{ fontWeight: "bold" }}
             >
               Follow Us
             </Typography>
@@ -129,10 +129,10 @@ export default function Footer() {
               style={{
                 textDecoration: "none",
                 fontWeight: "bold",
-                color: "#FFEE49",
+                color:"#FFEE49"
               }}
             >
-              MM Hotel
+              White House Addis Hotel
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}

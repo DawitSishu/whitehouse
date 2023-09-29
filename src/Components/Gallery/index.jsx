@@ -181,29 +181,6 @@ const index = () => {
       </div>
       <div style={{ padding: "20px" }}>
         <Typography align="center" variant="h3">
-          Restaurant and Bar
-        </Typography>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry gutter="20px">
-            {images.map((image, i) => {
-              return 8 < i && i <= 17 ? (
-                <LazyLoad offset={100} key={i}>
-                  <img
-                    key={i}
-                    src={image}
-                    style={{ width: "100%", display: "block" }}
-                    alt=""
-                    onClick={() => viewImage(image, i)}
-                    loading="lazy"
-                  />
-                </LazyLoad>
-              ) : null;
-            })}
-          </Masonry>
-        </ResponsiveMasonry>
-      </div>
-      <div style={{ padding: "20px" }}>
-        <Typography align="center" variant="h3">
           Some Other Places
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>

@@ -7,19 +7,24 @@ import { Paper, Button, Typography } from "@mui/material";
 export default function Example(props) {
   var items = [
     {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!",
+      name: "White House Addis Hotel",
+      description: "",
       imgUrl: img1,
     },
     {
-      name: "Random Name #2",
-      description: "Hello World!",
+      name: "White House Addis Hotel",
+      description: "",
       imgUrl: img2,
     },
   ];
 
   return (
-    <Carousel autoPlay={true} duration={300} navButtonsAlwaysVisible={true}>
+    <Carousel
+      autoPlay={true}
+      duration={300}
+      navButtonsAlwaysVisible={true}
+      indicators={false}
+    >
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
@@ -65,11 +70,8 @@ function Item(props) {
           alignItems: "center",
         }}
       >
-        <Typography variant="h3" color="primary" fontWeight="bold">
+        <Typography variant="h3" fontWeight="bold">
           {props.item.name}
-        </Typography>
-        <Typography color="primary" fontWeight="bold" variant="h5">
-          {props.item.description}
         </Typography>
       </div>
     </Paper>

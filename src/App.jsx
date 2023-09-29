@@ -23,7 +23,7 @@ const lightTheme = createTheme({
     },
     background: {
       background: {
-        default: "linear-gradient(to right, #2C5364, #203A43, #0F2027)",
+        default: "linear-gradient(160deg, #011b2a 0%, #80cbc3 100%)",
       },
     },
     text: {
@@ -46,7 +46,7 @@ const lightTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          background: "linear-gradient(to right, #2C5364, #203A43, #0F2027)",
+          background: "linear-gradient(160deg, #011b2a 0%, #80cbc3 100%)",
         },
       },
     },

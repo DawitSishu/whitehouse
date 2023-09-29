@@ -19,7 +19,7 @@ import {
 } from "@mui/material";
 import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
-import useScrollTrigger from '@mui/material/useScrollTrigger';
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 function CustomAppBar() {
   const isSmallScreen = useMediaQuery("(max-width:782px)");
@@ -32,9 +32,11 @@ function CustomAppBar() {
     <div>
       <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
         <Toolbar>
-          <IconButton size="large" edge="start">
-            <img src={logo} style={{ maxWidth: "70px" }} />
-          </IconButton>
+          <Link to="/">
+            <IconButton size="large" edge="start">
+              <img src={logo} style={{ maxWidth: "70px" }} />
+            </IconButton>
+          </Link>
           <Typography
             variant="h6"
             component="div"
@@ -56,16 +58,28 @@ function CustomAppBar() {
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
               <Button sx={{ color: "white" }}>Home</Button>
             </Link>
-            <Link to="/about" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              to="/about"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <Button sx={{ color: "white" }}>About</Button>
             </Link>
-            <Link to="/services" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              to="/services"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <Button sx={{ color: "white" }}>Services</Button>
             </Link>
-            <Link to="/gallery" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              to="/gallery"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <Button sx={{ color: "white" }}>Gallery</Button>
             </Link>
-            <Link to="/contact" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              to="/contact"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <Button sx={{ color: "white" }}>Contact</Button>
             </Link>
           </Stack>
