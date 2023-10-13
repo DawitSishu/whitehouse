@@ -63,7 +63,6 @@ const index = () => {
             width: "30%",
             height: "2px",
             margin: "20px auto",
-            // backgroundColor: "#FF00FF",
             backgroundColor: "#FFEE49",
           }}
         />
