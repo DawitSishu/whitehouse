@@ -4,7 +4,6 @@ import { Grid, Typography, Box } from "@mui/material";
 import ContactForm from "./ContactForm";
 import Footer from "../Footer";
 import NavBar from "../Navbar";
-import img2 from "../../assets/mm.jpg";
 import RoomIcon from "@mui/icons-material/Room";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
