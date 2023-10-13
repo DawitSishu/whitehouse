@@ -11,6 +11,8 @@ import {
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import StarIcon from "@mui/icons-material/Star";
+import { IoDiamondSharp } from "react-icons/io5";
+
 
 const RoomPage = ({ roomData }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -105,7 +107,7 @@ const RoomPage = ({ roomData }) => {
             {roomData.features.map((feature, index) => (
               <ListItem key={index}>
                 <ListItemIcon>
-                  <StarIcon color="primary" />
+                  <IoDiamondSharp color="#FFEE49" />
                 </ListItemIcon>
                 <Typography>{feature}</Typography>
               </ListItem>
