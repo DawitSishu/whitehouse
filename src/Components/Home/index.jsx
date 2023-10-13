@@ -20,7 +20,6 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import Carou from "./Carousel";
 
-
 const facilities = [
   { name: "Restaurant", icon: <BiRestaurant size={33} /> },
   { name: "Room Service", icon: <MdRoomService size={33} /> },
@@ -40,6 +39,35 @@ const index = () => {
     <div>
       <Navbar />
       <Carou />
+      <Grid pl={10} pr={10} pb={3} mt={2}>
+        <Typography
+          variant="h4"
+          align="center"
+          color="primary"
+          sx={{ fontWeight: "bold" }}
+        >
+          WELCOME TO OUR HOTEL
+        </Typography>
+        <Typography variant="body2" align="center">
+          <FaStar color="#FFEE49" /> Welcome to White Hose Addis Hotel, where
+          captivating energy meets unparalleled luxury! Prepare to be immersed
+          in a one-of-a-kind and electrifying environment in the heart of Addis
+          Abeba. Our energetic crew is ready to meet all of your needs, from
+          chic lodgings to varied eating and entertaining entertainment. Embrace
+          the city's lively pulse at White Hose Addis Hotel, where every minute
+          is thrilling! our doorstep. <FaStar color="#FFEE49" />
+        </Typography>
+        <Divider
+          sx={{
+            marginTop: 2,
+            width: "30%",
+            height: "2px",
+            margin: "20px auto",
+            // backgroundColor: "#FF00FF",
+            backgroundColor: "#FFEE49",
+          }}
+        />
+      </Grid>
       {/* <Grid
         container
         spacing={0}
