@@ -70,7 +70,7 @@ function Item(props) {
           alignItems: "center",
         }}
       >
-        <Typography variant="h3" fontWeight="bold">
+        <Typography variant="h3" fontWeight="bold" color="#ffffff">
           {props.item.name}
         </Typography>
       </div>
