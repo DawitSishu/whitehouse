@@ -10,9 +10,9 @@ import { MdRoomService, MdLocalLaundryService } from "react-icons/md";
 import {
   FaDumbbell,
   FaGlassMartini,
-  FaHotTub,
   FaWifi,
-  FaUsers,
+  FaClock,
+  FaSpa,
 } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -24,11 +24,11 @@ const facilities = [
   { name: "Restaurant", icon: <BiRestaurant size={33} /> },
   { name: "Room Service", icon: <MdRoomService size={33} /> },
   { name: "Laundary", icon: <MdLocalLaundryService size={33} /> },
-  { name: "Meeting", icon: <FaUsers size={33} /> },
+  { name: "Bar", icon: <FaGlassMartini size={33} /> },
   { name: "Gym", icon: <FaDumbbell size={33} /> },
-  { name: "Massage", icon: <TbMassage size={33} /> },
-  { name: "Steam", icon: <FaHotTub size={33} /> },
+  { name: "Spa", icon: <FaSpa size={33} /> },
   { name: "Wifi", icon: <FaWifi size={33} /> },
+  { name: "24/7 Front Desk", icon: <FaClock size={33} /> },
 ];
 
 const index = () => {
@@ -127,6 +127,80 @@ const index = () => {
               </Link>
             </div>
           </div>
+        </Grid>
+      </Grid>
+      <Box>
+        <Grid container justifyContent="center" spacing={2} mb={3}>
+          <Grid item xs={12}>
+            <Typography variant="h3" align="center" color="primary">
+              Our Facilities
+            </Typography>
+          </Grid>
+          <Grid container justifyContent="center">
+            <Box
+              sx={{
+                width: "60%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Typography variant="body2" align="center">
+                Our hotel delivers specialized and unique experiences, as well
+                as personalised concierge services, to fulfill your every need.
+                Our staff is committed to ensuring your complete satisfaction,
+                allowing you to relax and enjoy every moment of your visit.
+                Explore our one-of-a-kind packages for a spectacular luxury
+                holiday experience right now.
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} p={1} justifyContent="center">
+          {facilities.map((facility, index) => (
+            <Grid item xs={6} sm={3} key={index}>
+              <Grid container justifyContent="center">
+                {facility.icon}
+              </Grid>
+              <Typography align="center">{facility.name}</Typography>
+            </Grid>
+          ))}
+        </Grid>
+        <br />
+        <Grid container justifyContent="center">
+          <Link to="/services">
+            <Button variant="contained">Explore More</Button>
+          </Link>
+        </Grid>
+      </Box>
+      <Grid container spacing={2} pl={2} pr={2} mb={4} mt={2}>
+        <Grid item xs={12}>
+          <Typography variant="h3" align="center" color="primary">
+            Image Gallery
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid container justifyContent="center" mt={1}>
+          <Link to="/gallery">
+            <Button variant="contained">Ecplore More</Button>
+          </Link>
         </Grid>
       </Grid>
       {/* <Grid
@@ -403,7 +477,7 @@ const index = () => {
           </Box>
         </Grid>
       </Grid> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
