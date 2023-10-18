@@ -17,7 +17,7 @@ import {
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
+import img1 from "../../assets/white2.jpg";
 import Carou from "./Carousel";
 
 const facilities = [
@@ -66,6 +66,68 @@ const index = () => {
             backgroundColor: "#FFEE49",
           }}
         />
+      </Grid>
+      <Grid container spacing={2} pl={2} pr={2} mb={4}>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+            <div className="content">
+              <Typography variant="h5">About Us</Typography>
+              <br />
+              <Link to="/about">
+                <Button
+                  variant="outlined"
+                  sx={{ color: "white", borderColor: "white" }}
+                >
+                  continue
+                  <span style={{ marginLeft: "5px" }} />
+                  <IoIosArrowForward color="white" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+            <div className="content">
+              <Typography variant="h5">Our Services</Typography>
+              <br />
+              <Link to="/services">
+                <Button
+                  variant="outlined"
+                  sx={{ color: "white", borderColor: "white" }}
+                >
+                  continue
+                  <span style={{ marginLeft: "5px" }} />
+                  <IoIosArrowForward color="white" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={img1} alt="Background" className="background-image" />
+            <div className="overlay" />
+            <div className="content">
+              <Typography variant="h5">Contact Us</Typography>
+              <br />
+              <Link to="/contact">
+                <Button
+                  variant="outlined"
+                  sx={{ color: "white", borderColor: "white" }}
+                >
+                  continue
+                  <span style={{ marginLeft: "5px" }} />
+                  <IoIosArrowForward color="white" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Grid>
       </Grid>
       {/* <Grid
         container
