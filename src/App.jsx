@@ -9,6 +9,7 @@ const Gallery = React.lazy(() => import("./Components/Gallery"));
 const Home = React.lazy(() => import("./Components/Home"));
 const About = React.lazy(() => import("./Components/About"));
 const Services = React.lazy(() => import("./Components/Services"));
+const Menu = React.lazy(() => import("./Components/Menu"));
 
 const lightTheme = createTheme({
   palette: {
@@ -64,6 +65,15 @@ function App() {
             path="/"
             element={
               <Suspense fallback={<Loader />}>
+                <Menu />
+              </Suspense>
+            }
+          />
+          {/* <Route
+            exact
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
                 <Home />
               </Suspense>
             }
@@ -103,7 +113,7 @@ function App() {
                 <Gallery />
               </Suspense>
             }
-          />
+          /> */}
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
