@@ -14,7 +14,6 @@ const items = [
   { name: 'Tomato Basil Soup', category: 'Soup', price: '$5.99' },
   { name: 'Full English Breakfast', category: 'Breakfast', price: '$7.99' },
   { name: 'Local Breakfast Special', category: 'Local Breakfast', price: '$6.99' },
-  // Add more items and categories as needed
 ];
 
 const index  = () => {
