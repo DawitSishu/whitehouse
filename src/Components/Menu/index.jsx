@@ -27,6 +27,45 @@ const categories = [
   "Breakfast",
   "Local Breakfast",
 ];
+const salad = [
+  { name: "Tuna Salad", ingredient: "", price: "600" },
+  { name: "Tomato Salad", ingredient: "", price: "500" },
+  { name: "Lentil and Avocado Salad", ingredient: "", price: "600" },
+  { name: "Ethiopian Salad", ingredient: "", price: "550" },
+  { name: "Cucumber Salad", ingredient: "", price: "550" },
+  { name: "Chicken Salad", ingredient: "", price: "600" },
+  { name: "Mixed Salad", ingredient: "", price: "600" },
+  { name: "Beans Salad", ingredient: "", price: "00" },
+  { name: "White House Special Salad", ingredient: "", price: "1000" },
+  { name: "Potato Salad", ingredient: "", price: "500" },
+];
+const juice = [
+  { name: "Fruit Punch", ingredient: "", price: "600" },
+  { name: "Papaye Juice", ingredient: "", price: "300" },
+  { name: "Special Juice", ingredient: "", price: "350" },
+  { name: "Watermelon and Ginger Juice", ingredient: "", price: "250" },
+  { name: "Apple Juice", ingredient: "", price: "250" },
+  { name: "Avocado Juice", ingredient: "", price: "250" },
+];
+const Lunch = [
+  { name: "Conbo Fasting", ingredient: "", price: "600" },
+  { name: "Grilled Chicken Breast", ingredient: "", price: "1000" },
+  { name: "Chiken Couttlet", ingredient: "", price: "1100" },
+  { name: "Half Roasted Chicken", ingredient: "", price: "1500" },
+  { name: "Veal Couttlet", ingredient: "", price: "1200" },
+  { name: "Fill Steak", ingredient: "", price: "1200" },
+  { name: "Fill Goulash", ingredient: "", price: "1000" },
+  { name: "Yebeg Tibs(የበግ ጥብስ)", ingredient: "", price: "800" },
+];
+const Pizza = [
+  { name: "Meat Lover Pizza", ingredient: "", price: "700" },
+  { name: "Vegetable Pizza", ingredient: "", price: "600" },
+  { name: "Margarita Pizza", ingredient: "", price: "650" },
+  { name: "Tuna Pizza", ingredient: "", price: "700" },
+  { name: "Chicken Pizza", ingredient: "", price: "700" },
+  { name: "Special Pizza", ingredient: "", price: "800" },
+  { name: "Shawerma with Chicken", ingredient: "", price: "700" },
+];
 const items = [
   { name: "Classic Caesar Salad", category: "Salad", price: "$8.99" },
   { name: "Freshly Squeezed Orange Juice", category: "Juice", price: "$3.99" },
