@@ -66,6 +66,45 @@ const Pizza = [
   { name: "Special Pizza", ingredient: "", price: "800" },
   { name: "Shawerma with Chicken", ingredient: "", price: "700" },
 ];
+const Burger = [
+  { name: "Beef Burger(Normal)", ingredient: "", price: "850" },
+  { name: "Cheese Burger", ingredient: "", price: "1000" },
+  { name: "Special Burger", ingredient: "", price: "1200" },
+  { name: "Chicken Burger", ingredient: "", price: "1300" },
+  { name: "Club Sandwich", ingredient: "", price: "1500" },
+  { name: "Fasting Burger (fekafl Burger)", ingredient: "", price: "700" },
+  { name: "Fish Sandwich", ingredient: "", price: "800" },
+];
+const Fish = [
+  { name: "Fish Couttlet", ingredient: "", price: "500" },
+  { name: "Fish Goulash", ingredient: "", price: "550" },
+  { name: "Grilled Nile Perch", ingredient: "", price: "750" },
+  { name: "Shish Kebab", ingredient: "", price: "550" },
+  { name: "Baked Fish", ingredient: "", price: "700" },
+];
+const Soup = [
+  { name: "Chicken Cream Soup", ingredient: "", price: "450" },
+  { name: "Vegetable Soup", ingredient: "", price: "350" },
+  { name: "Minstroni Soup", ingredient: "", price: "350" },
+];
+const Breakfast = [
+  { name: "Omelette with Tea", ingredient: "", price: "400" },
+  { name: "Special Omelette", ingredient: "", price: "450" },
+  { name: "Scramble Egg", ingredient: "", price: "400" },
+  { name: "Cabbage Egg", ingredient: "", price: "400" },
+  { name: "Pan Cake", ingredient: "", price: "315" },
+  { name: "Toast Bread with Jam", ingredient: "", price: "300" },
+  { name: "Fried Egg", ingredient: "", price: "350" },
+  { name: "Tomato with Egg", ingredient: "", price: "400" },
+  { name: "French Toast", ingredient: "", price: "400" },
+];
+const LocalBreakfast = [
+  { name: "Fasting Firfir", ingredient: "", price: "450" },
+  { name: "Special Ful", ingredient: "", price: "450" },
+  { name: "Dulet", ingredient: "", price: "450" },
+  { name: "Chechebsa", ingredient: "", price: "450" },
+  { name: "Special Chechebsa", ingredient: "", price: "500" },
+];
 const items = [
   { name: "Classic Caesar Salad", category: "Salad", price: "$8.99" },
   { name: "Freshly Squeezed Orange Juice", category: "Juice", price: "$3.99" },
