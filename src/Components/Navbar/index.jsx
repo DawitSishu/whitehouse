@@ -88,7 +88,8 @@ function RoomTypes() {
                   onKeyDown={handleListKeyDown}
                 >
                   {roomTypes.map((type, index) => (
-                    <MenuItem key={index} onClick={handleClose} color="#000000">
+                    <MenuItem key={index} onClick={handleClose} style={{color:"black"}}
+                    >
                       {type}
                     </MenuItem>
                   ))}
@@ -239,7 +240,7 @@ function CustomAppBar() {
                     <ListItem
                       key={index}
                       onClick={showSidebar}
-                      sx={{ "&:hover": { backgroundColor: "#bf3af0" } }}
+                      sx={{ "&:hover": { backgroundColor: "#011b2a" } }}
                     >
                       <ListItemButton alignItems="center">
                         {item.icon}
