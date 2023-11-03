@@ -36,50 +36,50 @@ export const ServiceData = [
 
 
 
-export const roomData = [
-  {
-    image: img,
-    description:
-      "Experience royal luxury in the luxurious suite. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
-    images: [img, img, img, img],
-    title: "Deluxe king Room",
-    features: [
-      "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
-      "Multi channel television system",
-      "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
-    ],
-  },
-  {
-    image: gym,
-    description:
-      "This cozy room is perfect for friends or family traveling together. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
-    images: [gym, gym, gym, gym],
-    title: "Deluxe Twin Room",
-    features: [
-      "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
-      "Multi channel television system",
-      "Acces to high speed WiFi internet",
-      "2 Beds",
-    ],
-  },
-  {
-    image: mor,
-    description:
-      "This comfortable room offers all the amenities you need for a relaxing stay. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
-    images: [mor, mor, mor, mor],
-    title: "Luxury Single Room",
-    features: [
-      "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
-      "Multi channel television system",
-      "Acces to high speed WiFi internet",
-    ],
-  },
-];
+// export const roomData = [
+//   {
+//     image: img,
+//     description:
+//       "Experience royal luxury in the luxurious suite. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+//     images: [img, img, img, img],
+//     title: "Deluxe king Room",
+//     features: [
+//       "24 hour room service",
+//       "Breakfast Services",
+//       "Study Desk",
+//       "Multi channel television system",
+//       "Acces to high speed WiFi internet",
+//       "luxurious Shower with Seam and bath-hub",
+//       "Living Room with Comfortable Sofas",
+//     ],
+//   },
+//   {
+//     image: gym,
+//     description:
+//       "This cozy room is perfect for friends or family traveling together. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+//     images: [gym, gym, gym, gym],
+//     title: "Deluxe Twin Room",
+//     features: [
+//       "24 hour room service",
+//       "Breakfast Services",
+//       "Study Desk",
+//       "Multi channel television system",
+//       "Acces to high speed WiFi internet",
+//       "2 Beds",
+//     ],
+//   },
+//   {
+//     image: mor,
+//     description:
+//       "This comfortable room offers all the amenities you need for a relaxing stay. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+//     images: [mor, mor, mor, mor],
+//     title: "Luxury Single Room",
+//     features: [
+//       "24 hour room service",
+//       "Breakfast Services",
+//       "Study Desk",
+//       "Multi channel television system",
+//       "Acces to high speed WiFi internet",
+//     ],
+//   },
+// ];

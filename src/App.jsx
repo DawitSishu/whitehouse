@@ -9,8 +9,12 @@ const Gallery = React.lazy(() => import("./Components/Gallery"));
 const Home = React.lazy(() => import("./Components/Home"));
 const About = React.lazy(() => import("./Components/About"));
 const Services = React.lazy(() => import("./Components/Services"));
-const Menu = React.lazy(() => import("./Components/Menu"));
-const Rooms = React.lazy(() => import("./Components/Rooms"));
+// const Menu = React.lazy(() => import("./Components/Menu"));
+// const Rooms = React.lazy(() => import("./Components/Rooms"));
+const King = React.lazy(() => import("./Components/Rooms/KingRoom"));
+const Twin = React.lazy(() => import("./Components/Rooms/TwinBedRoom"));
+const Single = React.lazy(() => import("./Components/Rooms/SingleRoom"));
+const Standard = React.lazy(() => import("./Components/Rooms/StandardRoom"));
 
 const lightTheme = createTheme({
   palette: {
@@ -63,24 +67,6 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/menu"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Menu />
-              </Suspense>
-            }
-          />
-           <Route
-            exact
-            path="/"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Rooms />
-              </Suspense>
-            }
-          />
-          {/* <Route
-            exact
             path="/"
             element={
               <Suspense fallback={<Loader />}>
@@ -123,7 +109,43 @@ function App() {
                 <Gallery />
               </Suspense>
             }
-          /> */}
+          />
+          <Route
+            exact
+            path="/king-room"
+            element={
+              <Suspense fallback={<Loader />}>
+                <King />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/single-room"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Single />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/standard-room"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Standard />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/twin-bed-room"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Twin />
+              </Suspense>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
