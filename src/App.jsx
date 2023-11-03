@@ -29,7 +29,7 @@ const lightTheme = createTheme({
       },
     },
     text: {
-      primary: "#000000",
+      primary: "#ffffff",
     },
   },
   typography: {
@@ -75,7 +75,7 @@ function App() {
             path="/"
             element={
               <Suspense fallback={<Loader />}>
-                <Home />
+                <Rooms />
               </Suspense>
             }
           />
