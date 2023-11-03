@@ -33,4 +33,15 @@ export const SidebarData = [
     icon: <FaIcons.FaPhone style={{ fontSize: "24px" }} />,
     cName: "nav-text",
   },
+  {
+    title: "Rooms",
+    icon: <FaIcons.FaBed style={{ fontSize: "24px" }} />,
+    cName: "nav-dropdown",
+    submenu: [
+      { title: "Single Room", path: "/single-room" },
+      { title: "Double Room", path: "/double-room" },
+      { title: "Suite", path: "/suite" },
+      { title: "Deluxe Room", path: "/deluxe-room" },
+    ],
+  },
 ];

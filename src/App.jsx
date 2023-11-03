@@ -75,7 +75,7 @@ function App() {
             path="/"
             element={
               <Suspense fallback={<Loader />}>
-                <Rooms />
+                <Home />
               </Suspense>
             }
           />
