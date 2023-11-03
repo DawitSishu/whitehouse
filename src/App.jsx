@@ -10,6 +10,7 @@ const Home = React.lazy(() => import("./Components/Home"));
 const About = React.lazy(() => import("./Components/About"));
 const Services = React.lazy(() => import("./Components/Services"));
 const Menu = React.lazy(() => import("./Components/Menu"));
+const Rooms = React.lazy(() => import("./Components/Rooms"));
 
 const lightTheme = createTheme({
   palette: {
@@ -62,10 +63,19 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/menu"
             element={
               <Suspense fallback={<Loader />}>
                 <Menu />
+              </Suspense>
+            }
+          />
+           <Route
+            exact
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Rooms />
               </Suspense>
             }
           />
