@@ -155,7 +155,7 @@ const RoomPage = () => {
           <Typography variant="h5" color="primary">
             Room Features
           </Typography>
-          <List sx={{ columns: 2 }}>
+          <List sx={{ columns: { xs: 1, sm: 2 } }}>
             {roomData.features.map((feature, index) => (
               <ListItem key={index}>
                 <ListItemIcon>
