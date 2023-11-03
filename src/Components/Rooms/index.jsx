@@ -3,14 +3,15 @@ import {
   Grid,
   Typography,
   IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
   Box,
   Input,
   Button,
   TextField,
   FormControl,
+  Paper,
+  List,
+  ListItem,
+  ListItemIcon,
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
@@ -117,28 +118,6 @@ const RoomPage = () => {
               {roomData.title}
             </Typography>
             <Typography>{roomData.description}</Typography>
-            <ul
-              style={{
-                listStyleType: "none",
-                paddingLeft: "0",
-                columns: "2",
-              }}
-            >
-              {roomData.features.map((feature, index) => (
-                <li key={index}>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <IoDiamondSharp />
-                    <Typography>{feature}</Typography>
-                  </Box>
-                </li>
-              ))}
-            </ul>
             <Box sx={{ mt: 2 }}>
               <Typography variant="h5" color="primary">
                 Book Now
@@ -166,11 +145,27 @@ const RoomPage = () => {
                 fullWidth
                 sx={{ mt: 2 }}
               >
-                Book Now
+                {/* https://www.expedia.com/Addis-Ababa-Hotels-White-House-Addis-Hotel.h11691311.Hotel-Information?chkin=2023-11-05&chkout=2023-11-09&x_pwa=1&rfrr=HSR&pwa_ts=1699021543166&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6271020&destination=Addis+Ababa%2C+Ethiopia&destType=MARKET&neighborhoodId=553248633981729799&selected=11691311&latLong=8.980598%2C38.757758&sort=RECOMMENDED&top_dp=42&top_cur=USD&userIntent=&selectedRoomType=323724352&selectedRatePlan=392623535&searchId=49ae2472-1cd7-4360-8dad-f3bae3112274 */}
+                Book Online
               </Button>
             </Box>
           </Grid>
         </Grid>
+        <Box sx={{ mt: 2 }}>
+          <Typography variant="h5" color="primary">
+            Room Features
+          </Typography>
+          <List sx={{ columns: 2 }}>
+            {roomData.features.map((feature, index) => (
+              <ListItem key={index}>
+                <ListItemIcon>
+                  <IoDiamondSharp color="#FFEE49" />
+                </ListItemIcon>
+                {feature}
+              </ListItem>
+            ))}
+          </List>
+        </Box>
       </Box>
       <Footer />
     </div>
@@ -178,5 +173,3 @@ const RoomPage = () => {
 };
 
 export default RoomPage;
-
-//view haile resort
