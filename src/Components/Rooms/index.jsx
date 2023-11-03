@@ -144,8 +144,11 @@ const RoomPage = () => {
                 startIcon={<NavigateNextIcon />}
                 fullWidth
                 sx={{ mt: 2 }}
+                onClick={() => {
+                  window.location.href =
+                    "https://www.expedia.com/Addis-Ababa-Hotels-White-House-Addis-Hotel.h11691311.Hotel-Information?chkin=2023-11-05&chkout=2023-11-09&x_pwa=1&rfrr=HSR&pwa_ts=1699021543166&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS.com&useRewards=false&rm1=a2&regionId=6271020&destination=Addis+Ababa%2C+Ethiopia&destType=MARKET&neighborhoodId=553248633981729799&selected=11691311&latLong=8.980598%2C38.757758&sort=RECOMMENDED&top_dp=42&top_cur=USD&userIntent=&selectedRoomType=323724352&selectedRatePlan=392623535&searchId=49ae2472-1cd7-4360-8dad-f3bae3112274";
+                }}
               >
-                {/* https://www.expedia.com/Addis-Ababa-Hotels-White-House-Addis-Hotel.h11691311.Hotel-Information?chkin=2023-11-05&chkout=2023-11-09&x_pwa=1&rfrr=HSR&pwa_ts=1699021543166&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6271020&destination=Addis+Ababa%2C+Ethiopia&destType=MARKET&neighborhoodId=553248633981729799&selected=11691311&latLong=8.980598%2C38.757758&sort=RECOMMENDED&top_dp=42&top_cur=USD&userIntent=&selectedRoomType=323724352&selectedRatePlan=392623535&searchId=49ae2472-1cd7-4360-8dad-f3bae3112274 */}
                 Book Online
               </Button>
             </Box>
