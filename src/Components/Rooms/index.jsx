@@ -7,6 +7,10 @@ import {
   ListItem,
   ListItemIcon,
   Box,
+  Input,
+  Button,
+  TextField,
+  FormControl,
 } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
@@ -22,7 +26,7 @@ const roomData = {
   images: [img, img, img, img, img],
   title: "Vip Suite",
   features: [
-    "24-hour room service",
+    "24 hour room service",
     "Comfortable beds and pillows",
     "Fast Wi-Fi Connection",
     "In-room safe box",
@@ -33,7 +37,7 @@ const roomData = {
     "Refrigerator",
     "Cable television",
     "Jacuzzi",
-    "In-room Air condition",
+    "In room Air condition ",
   ],
 };
 
@@ -73,37 +77,98 @@ const RoomPage = () => {
               style={{
                 maxWidth: "100%",
                 height: "auto",
+                maxHeight: "400px",
               }}
             />
-            <div style={{ textAlign: "center" }}>
-              <IconButton onClick={handlePreviousImage}>
-                <NavigateBeforeIcon color="primary" />
-              </IconButton>
+            <Grid container sx={{ mt: 2 }}>
+              <Grid item>
+                <IconButton onClick={handlePreviousImage}>
+                  <NavigateBeforeIcon color="primary" />
+                </IconButton>
+              </Grid>
               {roomData.images.map((thumbnail, index) => (
-                <IconButton key={index} onClick={() => handleThumbnailClick(index)}>
+                <Grid item key={index}>
                   <img
                     src={thumbnail}
                     alt={`Thumbnail ${index}`}
                     loading="lazy"
+                    onClick={() => handleThumbnailClick(index)}
                     style={{
                       width: "60px",
                       height: "auto",
-                      border: currentImageIndex === index ? "2px solid #FFEE49" : "none",
+                      border:
+                        currentImageIndex === index
+                          ? "2px solid #FFEE49"
+                          : "none",
                       cursor: "pointer",
                     }}
                   />
-                </IconButton>
+                </Grid>
               ))}
-              <IconButton onClick={handleNextImage}>
-                <NavigateNextIcon color="primary" />
-              </IconButton>
-            </div>
+              <Grid item>
+                <IconButton onClick={handleNextImage}>
+                  <NavigateNextIcon color="primary" />
+                </IconButton>
+              </Grid>
+            </Grid>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="h4" color="primary" align="center">
               {roomData.title}
             </Typography>
             <Typography>{roomData.description}</Typography>
+            <ul
+              style={{
+                listStyleType: "none",
+                paddingLeft: "0",
+                columns: "2",
+              }}
+            >
+              {roomData.features.map((feature, index) => (
+                <li key={index}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <IoDiamondSharp />
+                    <Typography>{feature}</Typography>
+                  </Box>
+                </li>
+              ))}
+            </ul>
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="h5" color="primary">
+                Book Now
+              </Typography>
+              <FormControl fullWidth sx={{ mt: 1 }}>
+                <TextField
+                  label="Check-in Date"
+                  variant="outlined"
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                />
+              </FormControl>
+              <FormControl fullWidth sx={{ mt: 1 }}>
+                <TextField
+                  label="Check-out Date"
+                  variant="outlined"
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                />
+              </FormControl>
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={<NavigateNextIcon />}
+                fullWidth
+                sx={{ mt: 2 }}
+              >
+                Book Now
+              </Button>
+            </Box>
           </Grid>
         </Grid>
       </Box>
@@ -113,3 +178,5 @@ const RoomPage = () => {
 };
 
 export default RoomPage;
+
+//view haile resort
