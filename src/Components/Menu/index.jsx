@@ -197,7 +197,6 @@ const index = () => {
                   <Grid item xs={12} sm={6} md={4} key={index}>
                     <Paper
                       elevation={3}
-                      variant="outlined"
                       sx={{ p: 2, borderRadius: 3 }}
                     >
                       <Typography variant="h6" gutterBottom>
