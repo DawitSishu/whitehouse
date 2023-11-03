@@ -42,7 +42,7 @@ export const roomData = [
     description:
       "Experience royal luxury in the luxurious suite. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
     images: [img, img, img, img],
-    title: "Deluxe Double Room",
+    title: "Deluxe king Room",
     features: [
       "24 hour room service",
       "Breakfast Services",

@@ -37,7 +37,7 @@ const roomData = {
   ],
 };
 
-const RoomPage = () => {
+const King = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -170,4 +170,4 @@ const RoomPage = () => {
   );
 };
 
-export default RoomPage;
+export default King;

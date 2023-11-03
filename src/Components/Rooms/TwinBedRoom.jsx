@@ -23,21 +23,20 @@ import Footer from "../Footer";
 const roomData = {
   image: img,
   description:
-    "Experience royal luxury in the luxurious suite. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
+    "This cozy room is perfect for friends or family traveling together. Enjoy 24-hour room service and catch up on work at the study desk with multi-channel television system at your fingertips. Individual controlled air conditioning ensures your perfect temperature, and access to high-speed WiFi internet keeps you connected.",
   images: [img, img, img, img],
-  title: "Deluxe king Room",
+  title: "Deluxe Twin Room",
   features: [
     "24 hour room service",
     "Breakfast Services",
     "Study Desk",
     "Multi channel television system",
     "Acces to high speed WiFi internet",
-    "luxurious Shower with Seam and bath-hub",
-    "Living Room with Comfortable Sofas",
+    "2 Beds",
   ],
 };
 
-const RoomPage = () => {
+const Twin = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -170,4 +169,4 @@ const RoomPage = () => {
   );
 };
 
-export default RoomPage;
+export default Twin;
