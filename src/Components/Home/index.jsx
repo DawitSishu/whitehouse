@@ -4,11 +4,13 @@ import Footer from "../Footer";
 import {
   Grid,
   Typography,
-  Divider,
   Box,
   Button,
   ListItem,
   ListItemIcon,
+  TextField,
+  Divider,
+  Paper,
 } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
@@ -54,6 +56,66 @@ const index = () => {
     <div style={{ overflowX: "hidden" }}>
       <Navbar />
       <Carou />
+      <Paper
+        sx={{
+          backgroundColor: "white",
+          p: 3,
+          boxShadow: "0px 0px 10px rgba(0, 0, 0, 1)",
+          elevation: 5,
+        }}
+      >
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs={12} sm={5}>
+            <TextField
+              label="Check-in Date"
+              variant="outlined"
+              type="date"
+              InputLabelProps={{
+                shrink: true,
+                style: { color: "black" },
+              }}
+              inputProps={{
+                style: { color: "black" },
+              }}
+              fullWidth
+            />
+          </Grid>
+          <Grid item xs={12} sm={5}>
+            <TextField
+              label="Check-out Date"
+              variant="outlined"
+              type="date"
+              InputLabelProps={{
+                shrink: true,
+                style: { color: "black" },
+              }}
+              inputProps={{
+                style: { color: "black" },
+              }}
+              fullWidth
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={2}
+            sx={{ display: "flex", justifyContent: "flex-end" }}
+          >
+            <Button
+              variant="contained"
+              sx={{ fontSize: "0.9rem" }}
+              onClick={() => {
+                window.location.href =
+                  "https://www.expedia.com/Addis-Ababa-Hotels-White-House-Addis-Hotel.h11691311.Hotel-Information?chkin=2023-11-05&chkout=2023-11-09&x_pwa=1&rfrr=HSR&pwa_ts=1699021543166&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS.com&useRewards=false&rm1=a2&regionId=6271020&destination=Addis+Ababa%2C+Ethiopia&destType=MARKET&neighborhoodId=553248633981729799&selected=11691311&latLong=8.980598%2C38.757758&sort=RECOMMENDED&top_dp=42&top_cur=USD&userIntent=&selectedRoomType=323724352&selectedRatePlan=392623535&searchId=49ae2472-1cd7-4360-8dad-f3bae3112274";
+              }}
+            >
+              Book Online
+              <IoIosArrowForward style={{ marginLeft: "5px" }} />
+            </Button>
+          </Grid>
+        </Grid>
+      </Paper>
+
       <Grid pl={10} pr={10} pb={3} mt={2}>
         <Typography
           variant="h4"
