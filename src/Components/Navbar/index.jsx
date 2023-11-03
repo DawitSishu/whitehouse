@@ -139,7 +139,7 @@ function CustomAppBar() {
             direction="row"
             spacing={2}
             sx={{
-              display: isSmallScreen ? "none" : "block",
+              display: isSmallScreen ? "none" : "flex",
             }}
           >
             <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
@@ -287,55 +287,6 @@ function CustomAppBar() {
             )}
           </List>
         </Drawer>
-        {/* <Drawer
-          variant="temporary"
-          anchor="right"
-          sx={{
-            width: "250px",
-            "& .MuiDrawer-paper": {
-              width: "250px",
-              backgroundColor: "#394757",
-            },
-          }}
-          open={sidebar}
-          onClose={showSidebar}
-        >
-          <List>
-            <ListItem>
-              <IconButton onClick={showSidebar}>
-                <AiIcons.AiOutlineClose color="#FFF" />
-              </IconButton>
-              <Typography align="center" color="#FFF" ml={3}>
-                White House Addis
-              </Typography>
-            </ListItem>
-            <Divider />
-            {SidebarData.map((item, index) => (
-              <Link
-                to={item.path}
-                style={{ textDecoration: "none", color: "inherit" }}
-                key={index}
-              >
-                <ListItem
-                  key={index}
-                  onClick={showSidebar}
-                  sx={{ "&:hover": { backgroundColor: "#bf3af0" } }}
-                >
-                  <ListItemButton alignItems="center">
-                    {item.icon}
-                    <ListItemText
-                      primary={item.title}
-                      sx={{
-                        textAlign: "center",
-                        fontSize: "26px !important",
-                      }}
-                    />
-                  </ListItemButton>
-                </ListItem>
-              </Link>
-            ))}
-          </List>
-        </Drawer> */}
       </nav>
     </div>
   );

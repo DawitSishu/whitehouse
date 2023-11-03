@@ -51,7 +51,7 @@ const index = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Navbar />
       <Carou />
       <Grid pl={10} pr={10} pb={3} mt={2}>
