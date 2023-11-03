@@ -186,7 +186,7 @@ const index = () => {
                       color="textSecondary"
                       gutterBottom
                     >
-                      {item.ingredient}
+                      {item?.ingredient || "ingredient"}
                     </Typography>
                     <Typography variant="h6">{item.price}</Typography>
                   </Paper>
@@ -207,7 +207,7 @@ const index = () => {
                         color="textSecondary"
                         gutterBottom
                       >
-                        {item.ingredient}
+                        {item?.ingredient || "ingredient"}
                       </Typography>
                       <Typography variant="h6">{item.price}</Typography>
                     </Paper>
