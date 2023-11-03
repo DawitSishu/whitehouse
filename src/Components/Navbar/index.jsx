@@ -88,7 +88,7 @@ function RoomTypes() {
                   onKeyDown={handleListKeyDown}
                 >
                   {roomTypes.map((type, index) => (
-                    <MenuItem key={index} onClick={handleClose}>
+                    <MenuItem key={index} onClick={handleClose} color="#000000">
                       {type}
                     </MenuItem>
                   ))}
