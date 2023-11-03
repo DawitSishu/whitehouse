@@ -30,23 +30,23 @@ const categories = [
 const menuItems = {
   Salad: [
     { name: "Tuna Salad", ingredient: "", price: "600" },
-  { name: "Tomato Salad", ingredient: "", price: "500" },
-  { name: "Lentil and Avocado Salad", ingredient: "", price: "600" },
-  { name: "Ethiopian Salad", ingredient: "", price: "550" },
-  { name: "Cucumber Salad", ingredient: "", price: "550" },
-  { name: "Chicken Salad", ingredient: "", price: "600" },
-  { name: "Mixed Salad", ingredient: "", price: "600" },
-  { name: "Beans Salad", ingredient: "", price: "00" },
-  { name: "White House Special Salad", ingredient: "", price: "1000" },
-  { name: "Potato Salad", ingredient: "", price: "500" },
+    { name: "Tomato Salad", ingredient: "", price: "500" },
+    { name: "Lentil and Avocado Salad", ingredient: "", price: "600" },
+    { name: "Ethiopian Salad", ingredient: "", price: "550" },
+    { name: "Cucumber Salad", ingredient: "", price: "550" },
+    { name: "Chicken Salad", ingredient: "", price: "600" },
+    { name: "Mixed Salad", ingredient: "", price: "600" },
+    { name: "Beans Salad", ingredient: "", price: "00" },
+    { name: "White House Special Salad", ingredient: "", price: "1000" },
+    { name: "Potato Salad", ingredient: "", price: "500" },
   ],
   Juice: [
     { name: "Fruit Punch", ingredient: "", price: "600" },
-  { name: "Papaye Juice", ingredient: "", price: "300" },
-  { name: "Special Juice", ingredient: "", price: "350" },
-  { name: "Watermelon and Ginger Juice", ingredient: "", price: "250" },
-  { name: "Apple Juice", ingredient: "", price: "250" },
-  { name: "Avocado Juice", ingredient: "", price: "250" },
+    { name: "Papaye Juice", ingredient: "", price: "300" },
+    { name: "Special Juice", ingredient: "", price: "350" },
+    { name: "Watermelon and Ginger Juice", ingredient: "", price: "250" },
+    { name: "Apple Juice", ingredient: "", price: "250" },
+    { name: "Avocado Juice", ingredient: "", price: "250" },
   ],
   Lunch: [
     { name: "Conbo Fasting", ingredient: "", price: "600" },
@@ -60,12 +60,12 @@ const menuItems = {
   ],
   Pizza: [
     { name: "Meat Lover Pizza", ingredient: "", price: "700" },
-  { name: "Vegetable Pizza", ingredient: "", price: "600" },
-  { name: "Margarita Pizza", ingredient: "", price: "650" },
-  { name: "Tuna Pizza", ingredient: "", price: "700" },
-  { name: "Chicken Pizza", ingredient: "", price: "700" },
-  { name: "Special Pizza", ingredient: "", price: "800" },
-  { name: "Shawerma with Chicken", ingredient: "", price: "700" },
+    { name: "Vegetable Pizza", ingredient: "", price: "600" },
+    { name: "Margarita Pizza", ingredient: "", price: "650" },
+    { name: "Tuna Pizza", ingredient: "", price: "700" },
+    { name: "Chicken Pizza", ingredient: "", price: "700" },
+    { name: "Special Pizza", ingredient: "", price: "800" },
+    { name: "Shawerma with Chicken", ingredient: "", price: "700" },
   ],
   Burger: [
     { name: "Beef Burger(Normal)", ingredient: "", price: "850" },
@@ -78,26 +78,26 @@ const menuItems = {
   ],
   Fish: [
     { name: "Fish Couttlet", ingredient: "", price: "500" },
-  { name: "Fish Goulash", ingredient: "", price: "550" },
-  { name: "Grilled Nile Perch", ingredient: "", price: "750" },
-  { name: "Shish Kebab", ingredient: "", price: "550" },
-  { name: "Baked Fish", ingredient: "", price: "700" },
+    { name: "Fish Goulash", ingredient: "", price: "550" },
+    { name: "Grilled Nile Perch", ingredient: "", price: "750" },
+    { name: "Shish Kebab", ingredient: "", price: "550" },
+    { name: "Baked Fish", ingredient: "", price: "700" },
   ],
   Soup: [
     { name: "Chicken Cream Soup", ingredient: "", price: "450" },
-  { name: "Vegetable Soup", ingredient: "", price: "350" },
-  { name: "Minstroni Soup", ingredient: "", price: "350" },
+    { name: "Vegetable Soup", ingredient: "", price: "350" },
+    { name: "Minstroni Soup", ingredient: "", price: "350" },
   ],
   Breakfast: [
     { name: "Omelette with Tea", ingredient: "", price: "400" },
-  { name: "Special Omelette", ingredient: "", price: "450" },
-  { name: "Scramble Egg", ingredient: "", price: "400" },
-  { name: "Cabbage Egg", ingredient: "", price: "400" },
-  { name: "Pan Cake", ingredient: "", price: "315" },
-  { name: "Toast Bread with Jam", ingredient: "", price: "300" },
-  { name: "Fried Egg", ingredient: "", price: "350" },
-  { name: "Tomato with Egg", ingredient: "", price: "400" },
-  { name: "French Toast", ingredient: "", price: "400" },
+    { name: "Special Omelette", ingredient: "", price: "450" },
+    { name: "Scramble Egg", ingredient: "", price: "400" },
+    { name: "Cabbage Egg", ingredient: "", price: "400" },
+    { name: "Pan Cake", ingredient: "", price: "315" },
+    { name: "Toast Bread with Jam", ingredient: "", price: "300" },
+    { name: "Fried Egg", ingredient: "", price: "350" },
+    { name: "Tomato with Egg", ingredient: "", price: "400" },
+    { name: "French Toast", ingredient: "", price: "400" },
   ],
   "Local Breakfast": [
     { name: "Fasting Firfir", ingredient: "", price: "450" },
@@ -164,7 +164,7 @@ const index = () => {
               <ListItemIcon>
                 <CategoryIcon />
               </ListItemIcon>
-              <ListItemText primary={category} />
+              <ListItemText primary={category} sx={{color: "black"}} />
             </MenuItem>
           ))}
         </Menu>
@@ -178,7 +178,7 @@ const index = () => {
                     variant="outlined"
                     sx={{ p: 2, borderRadius: 3 }}
                   >
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" gutterBottom color="#000000">
                       {item.name}
                     </Typography>
                     <Typography
@@ -188,18 +188,17 @@ const index = () => {
                     >
                       {item?.ingredient || "ingredient"}
                     </Typography>
-                    <Typography variant="h6">{item.price}</Typography>
+                    <Typography variant="h6" color="#000000">
+                      {item.price}
+                    </Typography>
                   </Paper>
                 </Grid>
               ))
-            : categories.map((category) => (
+            : categories.map((category) =>
                 menuItems[category].map((item, index) => (
                   <Grid item xs={12} sm={6} md={4} key={index}>
-                    <Paper
-                      elevation={3}
-                      sx={{ p: 2, borderRadius: 3 }}
-                    >
-                      <Typography variant="h6" gutterBottom>
+                    <Paper elevation={3} sx={{ p: 2, borderRadius: 3 }}>
+                      <Typography variant="h6" gutterBottom color="#000000">
                         {item.name}
                       </Typography>
                       <Typography
@@ -209,11 +208,13 @@ const index = () => {
                       >
                         {item?.ingredient || "ingredient"}
                       </Typography>
-                      <Typography variant="h6">{item.price}</Typography>
+                      <Typography variant="h6" color="#000000">
+                        {item.price}
+                      </Typography>
                     </Paper>
                   </Grid>
                 ))
-              ))}
+              )}
         </Grid>
       </Container>
     </div>
