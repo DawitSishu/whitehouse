@@ -27,7 +27,12 @@ import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 
-const roomTypes = ["Single Room", "Double Room", "Suite", "Deluxe Room"];
+const roomTypes = [
+  { title: "King Room", path: "/king-room" },
+  { title: "Single Room", path: "/single-room" },
+  { title: "Standard Room", path: "/standard-room" },
+  { title: "Twin Bed Room", path: "/twin-bed-room" },
+];
 
 function RoomTypes() {
   const [open, setOpen] = useState(false);
@@ -51,7 +56,6 @@ function RoomTypes() {
     }
   }
 
-  // Return a button with a dropdown menu
   return (
     <div>
       <Button
@@ -88,9 +92,17 @@ function RoomTypes() {
                   onKeyDown={handleListKeyDown}
                 >
                   {roomTypes.map((type, index) => (
-                    <MenuItem key={index} onClick={handleClose} style={{color:"black"}}
+                    <MenuItem
+                      key={index}
+                      onClick={handleClose}
+                      style={{ color: "black" }}
                     >
-                      {type}
+                      <Link
+                        to={type.path}
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        {type.title}
+                      </Link>
                     </MenuItem>
                   ))}
                 </MenuList>
@@ -152,6 +164,7 @@ function CustomAppBar() {
             >
               <Button sx={{ color: "white" }}>About</Button>
             </Link>
+            <RoomTypes />
             <Link
               to="/services"
               style={{ textDecoration: "none", color: "inherit" }}
@@ -170,7 +183,6 @@ function CustomAppBar() {
             >
               <Button sx={{ color: "white" }}>Contact</Button>
             </Link>
-            <RoomTypes />
           </Stack>
           <IconButton
             size="large"
@@ -216,7 +228,7 @@ function CustomAppBar() {
                   <ListItem
                     key={index}
                     onClick={toggleRoomsSubmenu}
-                    sx={{ "&:hover": { backgroundColor: "#bf3af0" } }}
+                    sx={{ "&:hover": { backgroundColor: "#8a8553" } }}
                   >
                     <ListItemButton alignItems="center">
                       {item.icon}
@@ -240,7 +252,7 @@ function CustomAppBar() {
                     <ListItem
                       key={index}
                       onClick={showSidebar}
-                      sx={{ "&:hover": { backgroundColor: "#011b2a" } }}
+                      sx={{ "&:hover": { backgroundColor: "#8a8553" } }}
                     >
                       <ListItemButton alignItems="center">
                         {item.icon}
@@ -269,7 +281,7 @@ function CustomAppBar() {
                       <ListItem
                         key={index}
                         onClick={showSidebar}
-                        sx={{ "&:hover": { backgroundColor: "#bf3af0" } }}
+                        sx={{ "&:hover": { backgroundColor: "#8a8553" } }}
                       >
                         <ListItemButton alignItems="center">
                           <ListItemText

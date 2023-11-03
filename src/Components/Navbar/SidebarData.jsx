@@ -38,10 +38,10 @@ export const SidebarData = [
     icon: <FaIcons.FaBed style={{ fontSize: "24px" }} />,
     cName: "nav-dropdown",
     submenu: [
+      { title: "King Room", path: "/king-room" },
       { title: "Single Room", path: "/single-room" },
-      { title: "Double Room", path: "/double-room" },
-      { title: "Suite", path: "/suite" },
-      { title: "Deluxe Room", path: "/deluxe-room" },
+      { title: "Standard Room", path: "/standard-room" },
+      { title: "Twin Bed Room", path: "/twin-bed-room" },
     ],
   },
 ];
